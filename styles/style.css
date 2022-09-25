@@ -1,9 +1,18 @@
 body {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 97vh;
     background-color: antiquewhite;
+}
+
+.heading {
+    position: absolute;
+    top: 25px;
+    align-self: flex-start;
+    font-size: 50px;
+    color: rgb(116, 31, 45);
 }
 
 .container {
@@ -30,4 +39,16 @@ body {
     60% { transform: translateX(-200%);}
     80% { transform: translateX(-300%);}
     100% { transform: translateX(-400%);}
+}
+
+.info {
+    position: absolute;
+    align-self: flex-end;
+    font-size: 30px;
+    color: rgb(116, 31, 45);
+}
+
+.info:hover {
+    color: rgb(0, 153, 255);
+    transition: all 0.5s ease-in-out;
 }
